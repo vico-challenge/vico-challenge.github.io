@@ -1,0 +1,63 @@
+#nav{
+    border-bottom: 1px solid #ECF0F1;
+}
+#banner{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #34495E;
+}
+.text-bold{
+    font-weight: bold;
+}
+.title-text-box{
+    margin-bottom: 20px;
+}
+.card-text{
+    color: #2C3E50;
+}
+#learn-more-btn{
+    background-color: #0DCAF0;
+    color: white;
+}
+#download-btn{
+    background-color: #CFF4FC;
+    color: #0DCAF0;
+}
+.orgnizer-text{
+    margin-top: 10px;
+    text-align: center;
+}
+.orgnizer-box{
+    font-size: 12px;
+    text-align: center;
+}
+.orgnizer-img{
+    margin: 0 auto;
+}
+.card{
+    background-color: white;
+    border: 0px;
+    border-radius: 15px;
+    box-shadow:  0px 10px 20px rgba(189, 195, 199, 0.3);
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.media{
+    border-bottom: 1px solid #ECF0F1;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.table{
+    margin-top: 15px;
+    color: #34495E;
+}
+.footer{
+    margin-top: 10px;
+    padding: 15px;
+    border-top: 1px solid #ECF0F1;
+}
+.footer-text{
+    text-align: center;
+    color: #34495E;
+}
