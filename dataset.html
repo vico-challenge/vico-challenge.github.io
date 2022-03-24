@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/svg+xml" href="./img/logo.svg" sizes="any">
+
+    <title>Conversational Head Generation Challenge</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+        <div class="container"><a href="#" class="navbar-brand">ViCo</a>
+            <ul class="navbar-nav mr-auto order-1">
+                <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="#dates">Important Dates</a></li>
+                <li class="nav-item"><a class="nav-link" href="#paper">Paper</a></li>
+                <li class="nav-item"><a class="nav-link" href="./challenge.html" target="_blank">Challenge</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <main id="main" class="site-main main">
+        <section class="container" id="banner">
+            <img src="./img/logo.svg" width=120>
+            <div class="title-text-box">
+                <h1 class="display-4 text-bold">ViCo</h1>
+                <h2 class="display-5 text-bold">First Visual Conversation Dataset</h1>
+                <h5 class="text-regular">JD Explore Academy</h5>
+            </div>
+            <a class="btn" id="learn-more-btn" href="#overview" role="button">Learn more</a>
+            <a class="btn" id="download-btn" href="./challenge.html" role="button" target="_blank">Download dataset</a>
+        </section>
+
+        <section class="container">
+            <div class="card" id="overview">
+                <div class="card-body">
+                    <div class="media">
+                        <embed src="./img/dataset.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
+                        <div class="media-body">
+                          <h5 class="mt-0">Overview</h5>
+                          ViCo: First Visual Conversation Dataset
+                        </div>
+                      </div>
+                    <p class="card-text">Communication is one of the most common activities that people engage in their daily lives. It has been well studied by sociologists and linguists for many years. Right now, digital humans are being deployed as bandwidth-limited video transmission and virtual anchors such as brand ambassadors, digital influencers, customer support representatives, avatar in Metaverse, to name a few. With the widespread use of digital humans, customers can quickly access accurate information with 24*7 companionship across various channels, e.g., on desktop, mobile, or tablet. However, current digital humans technology focuses on talking-head video generation driven by the given audio input, which models unilateral information provider or presenter. The real-time face-to-face interaction between the customer and digital human is an urgent issue that has not been well-studied but has great application prospect of Metaverse and next generation of human-computer interaction. 
+                    </p>
+                    <p class="card-text">
+                        In face-to-face communication, the speaker transmits the verbal and non-verbal messages explicitly by keeping pace with the listener's reactions, and the listener receives the message and provides real-time responsive feedback to the speaker through non-verbal behavior (e.g., nod, smile, shake, etc.). Generating vivid talking head video and proper responsive listening behavior are both essential for digital humans during face-to-face human-computer interaction.
+                    </p>
+                    <p class="card-text">
+                        This challenge is based on our ``ViCo'' dataset, which is so far the first video conversation dataset containing face-to-face dialogue video clips in various scenarios. We aim to bring the face-to-face interactive head video generation into a visual competition in this challenge. A comprehensive collection of conversational video clips are selected from YouTube, containing two people’s frontal face by strictly following the principle that a video clip contains only uniquely identified listener and speaker, and requires the listener has responsive non-verbal feedback to speaker on the content of the conversation.
+                    </p>
+                    <p class="card-text">
+                        Based on this dataset, we organize the 1st challenge to draw attention to face-to-face functional digital human modeling and boost potential applications for human-computer interaction. Participants are expected to design algorithms to generate talking head videos with vivid head/facial motions and listening head videos focusing on speaker's behaviors. The final results will be announced at ACM Multimedia 2022, and the winner will be invited to present their approaches at the workshop. In general, we encourage digital humans to simulate talking, seeing, and listening to users, like understanding the meaning behind the words during face-to-face conversations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card" id="dates">
+                <div class="card-body">
+                    <div class="media">
+                        <embed src="./img/calender.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
+                        <div class="media-body">
+                          <h5 class="mt-0">Important Dates</h5>
+                          Important dates of Conversational Head Generation Challenge
+                        </div>
+                      </div>
+                    <p class="card-text">
+                        Competition URL: <a href="">TBD</a>
+                    </p>
+                    <table class="table table-striped table-bordered">
+                        <tbody>
+                          <tr>
+                            <td>Challenge Launch Data</td>
+                            <td>March 25, 2022</td>
+                          </tr>
+                          <tr>
+                            <td>Challenge Submissions Deadline</td>
+                            <td>June 28, 2022</td>
+                          </tr>
+                          <tr>
+                            <td>Challenge Award Notification</td>
+                            <td>July 6, 2022</td>
+                          </tr>
+                          <tr>
+                            <td>Paper Submissions Deadline</td>
+                            <td>July 17, 2022</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card" id="paper">
+                <div class="card-body">
+                    <div class="media">
+                        <embed src="./img/icon-paper.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
+                        <div class="media-body">
+                          <h5 class="mt-0">Paper</h5>
+                          Paper for ViCo
+                        </div>
+                      </div>
+                    <p class="card-text">Please cite the following paper if you use our dataset.</p>
+                    <p class="card-text">Mohan Zhou, Yalong Bai, Wei Zhang, Ting Yao, Tiejun Zhao, Tao Mei. "Responsive Listening Head Generation: A Benchmark Dataset and Baseline".<br/>[<a href="https://arxiv.org/abs/2112.13548" target="_blank">arXiv</a>] [<a href="https://project.mhzhou.com/rld/" target="_blank">project</a>]</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">JD Explore Academy</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -12,17 +12,17 @@
     <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/svg+xml" href="./img/logo.svg" sizes="any">
 
-    <title>Conversational Head Generation Challenge</title>
+    <title>conversational head generation challenge</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-        <div class="container"><a href="#" class="navbar-brand">ViCo</a>
+        <div class="container"><a href="/" class="navbar-brand">ViCo</a>
             <ul class="navbar-nav mr-auto order-1">
-                <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
-                <li class="nav-item"><a class="nav-link" href="#dates">Important Dates</a></li>
-                <li class="nav-item"><a class="nav-link" href="#paper">Paper</a></li>
-                <li class="nav-item"><a class="nav-link" href="./challenge.html" target="_blank">Challenge</a></li>
+                <li class="nav-item"><a class="nav-link" href="#challenge">Challenge overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="#dataset">Dataset overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="#downloads">Dataset downloads</a></li>
+                <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
             </ul>
         </div>
         </div>
@@ -33,37 +33,66 @@
             <img src="./img/logo.svg" width=120>
             <div class="title-text-box">
                 <h1 class="display-4 text-bold">ViCo</h1>
-                <h2 class="display-5 text-bold">First Visual Conversation Dataset</h1>
-                <h5 class="text-regular">JD Explore Academy</h5>
+                <h2 class="display-5 text-bold">Conversational Head Generation Challenge</h1>
+                <h5 class="text-regular">held in conjunction with ACM Multimedia 2022</h5>
             </div>
-            <a class="btn" id="learn-more-btn" href="#overview" role="button">Learn more</a>
-            <a class="btn" id="download-btn" href="./challenge.html" role="button" target="_blank">Download dataset</a>
+            <a class="btn" id="learn-more-btn" href="#challenge" role="button">Learn more</a>
+            <a class="btn" id="download-btn" href="#downloads" role="button">Download dataset</a>
         </section>
 
         <section class="container">
-            <div class="card" id="overview">
+            <div class="card" id="challenge">
                 <div class="card-body">
                     <div class="media">
-                        <embed src="./img/dataset.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
+                        <embed src="./img/prize.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
                         <div class="media-body">
-                          <h5 class="mt-0">Overview</h5>
-                          ViCo: First Visual Conversation Dataset
+                          <h5 class="mt-0">Challenge Overview</h5>
+                          Conversational Head Generation Challenge
                         </div>
                       </div>
-                    <p class="card-text">Communication is one of the most common activities that people engage in their daily lives. It has been well studied by sociologists and linguists for many years. Right now, digital humans are being deployed as bandwidth-limited video transmission and virtual anchors such as brand ambassadors, digital influencers, customer support representatives, avatar in Metaverse, to name a few. With the widespread use of digital humans, customers can quickly access accurate information with 24*7 companionship across various channels, e.g., on desktop, mobile, or tablet. However, current digital humans technology focuses on talking-head video generation driven by the given audio input, which models unilateral information provider or presenter. The real-time face-to-face interaction between the customer and digital human is an urgent issue that has not been well-studied but has great application prospect of Metaverse and next generation of human-computer interaction. 
-                    </p>
                     <p class="card-text">
                         In face-to-face communication, the speaker transmits the verbal and non-verbal messages explicitly by keeping pace with the listener's reactions, and the listener receives the message and provides real-time responsive feedback to the speaker through non-verbal behavior (e.g., nod, smile, shake, etc.). Generating vivid talking head video and proper responsive listening behavior are both essential for digital humans during face-to-face human-computer interaction.
                     </p>
                     <p class="card-text">
                         This challenge is based on our ``ViCo'' dataset, which is so far the first video conversation dataset containing face-to-face dialogue video clips in various scenarios. We aim to bring the face-to-face interactive head video generation into a visual competition in this challenge. A comprehensive collection of conversational video clips are selected from YouTube, containing two people’s frontal face by strictly following the principle that a video clip contains only uniquely identified listener and speaker, and requires the listener has responsive non-verbal feedback to speaker on the content of the conversation.
                     </p>
+                    <p class="card-text">ViCo conversational head generation challenge is organized in conjunction with ACM Multimedia 2022. The challenge includes two tracks:: 
+                    <ul>
+                        <li><b>Vivid Talking Head Video Generation</b> conditioned
+                            on the identity and audio signals of the speaker.</li><!--li>Given the identity and audio signals of the speaker, participants are challenged to develop an algorithm to generate a video that can match the audio signals.</li-->
+                        <li><b>Responsive Listening Head Video Generation</b> conditioned on the identity of the listener and with responding to the speaker’s
+                            behaviors in real-time.</li><!--li>Given the identity of the listener, and a corresponding talking head video & audio, participants are challenged to develop an algorithm to generate a video that can respond to the speaker's behaviors actively in real-time.</li-->
+                    </ul>
+                    Those generation videos are expected to be clear, lively and identity-preserved. In general, we encourage digital humans to simulate talking, seeing, and listening to users, like understanding the meaning behind the words during face-to-face conversations.
+                    </p>
+                    <!--
+                    <b>Vivid talking head video generation</b> conditioned on the identity and audio signals of the speaker; <b>Responsive listening head video generation</b> conditioned on the identity of the listener and with responding to the speaker’s behaviors in real-time. The main difficulties lie in the large amount of products labels, and fine-grained details of similar products. Top-1 and Top-5 accuracy is measured to rank each submission.
+                    </p>
+                    -->    
                     <p class="card-text">
-                        Based on this dataset, we organize the 1st challenge to draw attention to face-to-face functional digital human modeling and boost potential applications for human-computer interaction. Participants are expected to design algorithms to generate talking head videos with vivid head/facial motions and listening head videos focusing on speaker's behaviors. The final results will be announced at ACM Multimedia 2022, and the winner will be invited to present their approaches at the workshop. In general, we encourage digital humans to simulate talking, seeing, and listening to users, like understanding the meaning behind the words during face-to-face conversations.
+                        Individuals and teams with top submissions will present their work at the workshop. We also encourage every team to upload a paper (may consist of up to 4 pages) that briefly describes their system. The paper format follows <a href="https://www.acm.org/publications/proceedings-template">ACM proceeding style</a>.
+                    </p>
+                    <p class="card-text">
+                        Competition URL: <a href="">TBD</a>
                     </p>
                 </div>
             </div>
 
+            <div class="card" id="dataset">
+                <div class="card-body">
+                    <div class="media">
+                        <embed src="./img/dataset.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
+                        <div class="media-body">
+                          <h5 class="mt-0">Dataset Overview</h5>
+                          ViCo: First Visual Conversation Dataset
+                        </div>
+                      </div>
+                      <p class="card-text">
+                        All of the videos in our ViCo dataset are collected from the online video sharing platform YouTube. Rich video clips are contained in the dataset. These clips are collected from various face-to-face conversational scenarios, where bi-directional information flow is highlighted between two people. All video clips are manually checked/labeled by the production expert team. 
+                    </p>
+                </div>
+            </div>
+        
             <div class="card" id="dates">
                 <div class="card-body">
                     <div class="media">
@@ -74,42 +103,125 @@
                         </div>
                       </div>
                     <p class="card-text">
-                        Competition URL: <a href="">TBD</a>
+                        <b>Signup to receive updates</b>: using <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYgdkyKO46SsKaMfRmSmMCK6bm5fdNzEOhJSHoqN6zctWB5w/viewform?usp=sf_link">this form</a>
                     </p>
                     <table class="table table-striped table-bordered">
                         <tbody>
                           <tr>
-                            <td>Challenge Launch Data</td>
-                            <td>March 25, 2022</td>
+                            <td>Dataset available for download (training set)</td>
+                            <td>March 31, 2022</td>
                           </tr>
                           <tr>
-                            <td>Challenge Submissions Deadline</td>
-                            <td>June 28, 2022</td>
+                            <td>Challenge launch date</td>
+                            <td>April 4, 2022</td>
                           </tr>
                           <tr>
-                            <td>Challenge Award Notification</td>
-                            <td>July 6, 2022</td>
+                            <td>Test set of each track available for download</td>
+                            <td>June 3, 2022</td>
                           </tr>
                           <tr>
-                            <td>Paper Submissions Deadline</td>
+                            <td>Challenge submissions deadline</td>
+                            <td>June 10, 2022</td>
+                          </tr>
+                          <tr>
+                            <td>Evaluation results and challenge award announce</td>
+                            <td>June 17, 2022</td>
+                          </tr>
+                          <tr>
+                            <td>Paper submission deadline</td>
+                            <td>July 8, 2022</td>
+                          </tr>
+                          <tr>
+                            <td>MM Grand Challenge Camera Ready papers due</td>
                             <td>July 17, 2022</td>
                           </tr>
+                          
                         </tbody>
                     </table>
                 </div>
             </div>
 
-            <div class="card" id="paper">
+            <div class="card" id="downloads">
                 <div class="card-body">
                     <div class="media">
-                        <embed src="./img/icon-paper.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
+                        <embed src="./img/download.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
                         <div class="media-body">
-                          <h5 class="mt-0">Paper</h5>
-                          Paper for ViCo
+                          <h5 class="mt-0">Dataset Downloads</h5>
+                          Download ViCo dataset
                         </div>
                       </div>
-                    <p class="card-text">Please cite the following paper if you use our dataset.</p>
-                    <p class="card-text">Mohan Zhou, Yalong Bai, Wei Zhang, Ting Yao, Tiejun Zhao, Tao Mei. "Responsive Listening Head Generation: A Benchmark Dataset and Baseline".<br/>[<a href="https://arxiv.org/abs/2112.13548" target="_blank">arXiv</a>] [<a href="https://project.mhzhou.com/rld/" target="_blank">project</a>]</p>
+                      <p class="card-text"><strong>ViCo download link</strong>: <a href="">TBD</a>.</p>
+                    <div class="alert alert-dark" role="alert">
+                        <h4 class="alert-heading">Terms and Conditions</h4>
+                        <p>The dataset users have requested permission to use the ViCo database. In exchange for such permission, the users hereby agree to the following terms and conditions:</p>
+                        <hr>
+                        <ul>
+                            <li>The database can only be used for non-commercial research and educational purposes.</li>
+                            <li>The authors of the database make no representations or warranties regarding the
+                                Database, including but not limited to warranties of non-infringement or fitness for
+                                a particular purpose.
+                                </li>
+                            <li>You accepts full responsibility for your use of the Database and shall defend and
+                                indemnify the Authors of ViCo, against any and all claims arising from your
+                                use of the Database, including but not limited to your use of any copies of copyrighted
+                                images that you may create from the Database.
+                                </li>
+                            <li>You may provide research associates and colleagues with access to the Database
+provided that they first agree to be bound by these terms and conditions.
+                            </li>
+                            <!--li>
+                                JD.co. reserve the right to terminate your access to the Database at any time. 
+                            </li-->
+                            <li>
+                                If you are employed by a for-profit, commercial entity, your employer shall also be
+bound by these terms and conditions, and you hereby represents that you are authorized to enter into this agreement on behalf of such employer.
+                            </li>
+                            <!--li>
+                                The Intellectual Property Right Law of the People’s Republic of China apply to all
+                                disputes under this agreement.                                 
+                            </li-->
+                        </ul>
+                    </div>
+                    <p class="card-text">More details about ViCo dataset, please refer to:</p>
+                    <p class="card-text">Mohan Zhou, Yalong Bai, Wei Zhang, Ting Yao, Tiejun Zhao, Tao Mei. "Responsive Listening Head Generation: A Benchmark Dataset and Baseline".<br/>[<a href="https://arxiv.org/abs/2112.13548" target="_blank">arXiv</a>] [<a href="https://project.mhzhou.com/rld/" target="_blank">Project</a>]</p>
+                </div>
+            </div>
+
+            <div class="card" id="organizers">
+                <div class="card-body">
+                    <div class="media">
+                        <embed src="./img/orgnizer.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
+                        <div class="media-body">
+                          <h5 class="mt-0">Organizers</h5>
+                          Organizers of ViCo: First Visual Conversation Dataset
+                        </div>
+                      </div>
+                    <div class="row">
+                        <div class="col orgnizer-box">
+                            <img src="./img/yalongbai.jpg" class="rounded-circle orgnizer-img" width=100/>
+                            <p class="orgnizer-text">Yalong Bai<br>JD Explore Academy</p>
+                        </div>
+                        <div class="col orgnizer-box">
+                            <img src="./img/mohanzhou.jpg" class="rounded-circle orgnizer-img" width=100/>
+                            <p class="orgnizer-text">Mohan Zhou<br>HIT, Harbin, China</p>
+                        </div>
+                        <div class="col orgnizer-box">
+                            <img src="./img/weizhang.jpg" class="rounded-circle orgnizer-img" width=100/>
+                            <p class="orgnizer-text">Wei Zhang<br>JD Explore Academy</p>
+                        </div>
+                        <div class="col orgnizer-box">
+                            <img src="./img/tingyao.jpg" class="rounded-circle orgnizer-img" width=100/>
+                            <p class="orgnizer-text">Ting Yao<br>JD Explore Academy</p>
+                        </div>
+                        <div class="col orgnizer-box">
+                            <img src="./img/xiaodonghe.jpg" class="rounded-circle orgnizer-img" width=100/>
+                            <p class="orgnizer-text">Xiaodong He<br>JD Explore Academy</p>
+                        </div>
+                        <div class="col orgnizer-box">
+                            <img src="./img/tmei.jpg" class="rounded-circle orgnizer-img" width=100/>
+                            <p class="orgnizer-text">Tao Mei<br>JD Explore Academy</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
