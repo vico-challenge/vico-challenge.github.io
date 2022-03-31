@@ -72,9 +72,6 @@
                     <p class="card-text">
                         Individuals and teams with top submissions will present their work at the workshop. We also encourage every team to upload a paper (may consist of up to 4 pages) that briefly describes their system. The paper format follows <a href="https://www.acm.org/publications/proceedings-template">ACM proceeding style</a>.
                     </p>
-                    <p class="card-text">
-                        Competition URL: <a href="">TBD</a>
-                    </p>
                 </div>
             </div>
 
@@ -98,8 +95,35 @@
                         <div class="media-body">
                           <h5 class="mt-0-vico">Dataset Downloads</h5>
                         </div>
-                      </div>
-                      <p class="card-text"><strong>ViCo download link</strong>: <a href="">TBD</a>.</p>
+                    </div>
+                    <p class="card-text">
+                        <strong>Train Set:</strong> <a href="https://1drv.ms/u/s!Ag220j2nXkVswCXNjZcGk2mGtMnl?e=sArC1M" target="_blank">OneDrive</a><br/>
+                        <strong>Test Set:</strong> Release in June 3, 2022<br/>
+                        <em>Note: For Train Set, data in <code>listening_head.zip</code> contains the data in <code>talking_head.zip</code>.</em>
+                    </p>
+                    <h5>Guidelines</h5>
+                    <p class="card-text">
+                        For each track, the data consists of three parts:
+                        <ul>
+                            <li><code>videos/*.mp4</code>: all videos without audio track</li>
+                            <li><code>audios/*.wav</code>: all audios</li>
+                            <li>
+                                <code>*.csv</code>: return meta data about all videos/audios
+                                <table class="table table-hover table-sm">
+                                <thead>
+                                <tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Description</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>video_id</td><td>str</td><td>ID of video</td></tr>
+                                    <tr><td>uuid</td><td>str</td><td>ID of video sub-clips</td></tr>
+                                    <tr><td>speaker_id</td><td>int</td><td>ID of speaker</td></tr>
+                                    <tr><td>listener_id (optional)</td><td>int</td><td>ID of listener (only in listening_head)</td></tr>
+                                </tbody>
+                                </table>
+                                Given the uuid, the only audio <code>audios/{uuid}.wav</code> can be identified, and the listener&#39;s video is <code>videos/{uuid}.listener.mp4</code>, the speaker&#39;s video is <code>videos/{uuid}.speaker.mp4</code>.
+                            </li>
+                        </ul>
+                    </p>
                     <div class="alert alert-dark" role="alert">
                         <h4 class="alert-heading">Terms and Conditions</h4>
                         <p>The dataset users have requested permission to use the ViCo database. In exchange for such permission, the users hereby agree to the following terms and conditions:</p>
