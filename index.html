@@ -197,6 +197,41 @@ bound by these terms and conditions, and you hereby represents that you are auth
                     </div>
                 </div>
             </div>
+
+            <div class="card" id="submission">
+                <div class="card-body">
+                    <div class="media">
+                        <embed src="./img/star.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
+                        <div class="media-body">
+                            <h5 class="mt-0">Competition Submission</h5>
+                        </div>
+                    </div>
+                    <p class="card-text">
+                        Submission platform and Leaderboard would be public when the test set released (May 23, 2022).
+                    </p>
+                </div>
+                <div class="card-body" id="evaluation">
+                    <div class="media">
+                        <embed src="./img/balance.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
+                        <div class="media-body">
+                            <h5 class="mt-0-vico">Competition Evaluation</h5>
+                        </div>
+                    </div>
+                    <p class="card-text">
+                        The quality of generated videos will be quantitative evaluated from the following prespectives:
+                        <ul>
+                            <li><strong>generation quality (image level)</strong>: SSIM, CPBD, PSNR</li>
+                            <li><strong>generation quality (feature level)</strong>: FID</li>
+                            <li><strong>identity preserving</strong>: Cosine Similarity (Arcface)</li>
+                            <li><strong>expression</strong>: L1 distance of 3dmm exp features</li>
+                            <li><strong>head motion</strong>: L1 distance of 3dmm angle &#38; trans features</li>
+                            <li><strong>lip sync (speaker only)</strong>: AV offset and AV confidence (SyncNet)</li>
+                            <li><strong>lip landmark distance</strong>: L1 distance of lip landmarks</li>
+                        </ul>
+                        Scripts can be accessed from <a href="https://github.com/dc3ea9f/vico_challenge_baseline" target="_blank">this github repo</a>.
+                    </p>
+                </div>
+            </div>
         
             <div class="card" id="dates">
                 <div class="card-body">
