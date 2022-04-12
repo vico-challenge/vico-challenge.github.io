@@ -50,7 +50,7 @@
         </section>
 
         <section class="container">
-            <div class="card" id="challenge">
+            <div class="card cardx" id="challenge">
                 <div class="card-body">
                     <div class="media">
                         <embed src="./img/prize.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
@@ -65,7 +65,7 @@
                     <p class="card-text">
                         This challenge is based on our ``ViCo'' dataset, which is so far the first video conversation dataset containing face-to-face dialogue video clips in various scenarios. We aim to bring the face-to-face interactive head video generation into a visual competition in this challenge. A comprehensive collection of conversational video clips are selected from YouTube, containing two people’s frontal face by strictly following the principle that a video clip contains only uniquely identified listener and speaker, and requires the listener has responsive non-verbal feedback to speaker on the content of the conversation.
                     </p>
-                    <p class="card-text">ViCo conversational head generation challenge is organized in conjunction with ACM Multimedia 2022. The challenge includes two tracks:: 
+                    <p class="card-text">ViCo conversational head generation challenge is organized in conjunction with ACM Multimedia 2022. The challenge includes two tracks:
                     <ul>
                         <li><b>Vivid Talking Head Video Generation</b> conditioned
                             on the identity and audio signals of the speaker.</li><!--li>Given the identity and audio signals of the speaker, participants are challenged to develop an algorithm to generate a video that can match the audio signals.</li-->
@@ -87,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="card" id="dataset">
+            <div class="card cardx" id="dataset">
                 <div class="card-body">
                     <div class="media">
                         <embed src="./img/dataset.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
@@ -95,10 +95,75 @@
                           <h5 class="mt-0">Dataset Overview</h5>
                           ViCo: The First Video Corpus for Face-to-face Conversation
                         </div>
-                      </div>
-                      <p class="card-text">
+                    </div>
+                    <p class="card-text">
                         All of the videos in our ViCo dataset are collected from the online video sharing platform YouTube. Rich video clips are contained in the dataset. These clips are collected from various face-to-face conversational scenarios, where bi-directional information flow is highlighted between two people. All video clips are manually checked/labeled by the production expert team. 
                     </p>
+                    <p>
+                        <a data-toggle="collapse" href="#collapseExample">
+                            <em>Show example videos from our ViCo dataset.</em>
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card cardx card-body">
+                            <div class="row" id="examples">
+                                <div class="col-md-4">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <video controls="true" class="embed-responsive-item">
+                                            <source src="media/examples/cte53x3i02lo.mp4" type="video/mp4" />
+                                            <p>Your browser doesn't support HTML5 video. Here is a <a href="media/examples/cte53x3i02lo.mp4">link to the
+                                                    video</a> instead.</p>
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <video controls="true" class="embed-responsive-item">
+                                            <source src="media/examples/cz7zhbn7aq0u.mp4" type="video/mp4" />
+                                            <p>Your browser doesn't support HTML5 video. Here is a <a href="media/examples/cz7zhbn7aq0u.mp4">link to the
+                                                    video</a> instead.</p>
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <video controls="true" class="embed-responsive-item">
+                                            <source src="media/examples/d336vte2a17j.mp4" type="video/mp4" />
+                                            <p>Your browser doesn't support HTML5 video. Here is a <a href="media/examples/d336vte2a17j.mp4">link to the
+                                                    video</a> instead.</p>
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <video controls="true" class="embed-responsive-item">
+                                            <source src="media/examples/d5s6u96knvkp.mp4" type="video/mp4" />
+                                            <p>Your browser doesn't support HTML5 video. Here is a <a href="media/examples/d5s6u96knvkp.mp4">link to the
+                                                    video</a> instead.</p>
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <video controls="true" class="embed-responsive-item">
+                                            <source src="media/examples/donfyjh9ge50.mp4" type="video/mp4" />
+                                            <p>Your browser doesn't support HTML5 video. Here is a <a href="media/examples/donfyjh9ge50.mp4">link to the
+                                                    video</a> instead.</p>
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <video controls="true" class="embed-responsive-item">
+                                            <source src="media/examples/i0dqfrs6gz38.mp4" type="video/mp4" />
+                                            <p>Your browser doesn't support HTML5 video. Here is a <a href="media/examples/i0dqfrs6gz38.mp4">link to the
+                                                    video</a> instead.</p>
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <p class="card-text">More details about ViCo dataset, please refer to:</br>Mohan Zhou, Yalong Bai, Wei Zhang, Ting Yao, Tiejun Zhao, Tao Mei. "Responsive Listening Head Generation: A Benchmark Dataset and Baseline".<br/>[<a href="https://arxiv.org/abs/2112.13548" target="_blank">arXiv</a>] [<a href="https://project.mhzhou.com/rld/" target="_blank">Project</a>]</p>
                 </div>
                 <div class="card-body" id="downloads">
@@ -198,7 +263,7 @@ bound by these terms and conditions, and you hereby represents that you are auth
                 </div>
             </div>
 
-            <div class="card" id="submission">
+            <div class="card cardx" id="submission">
                 <div class="card-body">
                     <div class="media">
                         <embed src="./img/star.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
@@ -233,7 +298,7 @@ bound by these terms and conditions, and you hereby represents that you are auth
                 </div>
             </div>
         
-            <div class="card" id="dates">
+            <div class="card cardx" id="dates">
                 <div class="card-body">
                     <div class="media">
                         <embed src="./img/calender.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
@@ -286,7 +351,7 @@ bound by these terms and conditions, and you hereby represents that you are auth
                 </div>
             </div>
 
-            <div class="card" id="organizers">
+            <div class="card cardx" id="organizers">
                 <div class="card-body">
                     <div class="media">
                         <embed src="./img/orgnizer.svg" type="image/svg+xml" class="mr-3 align-self-center" width=40/>
