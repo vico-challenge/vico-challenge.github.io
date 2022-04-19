@@ -175,12 +175,13 @@
                     </div>
                     <p class="card-text">
                         <strong>Train Set:</strong> <a href="https://1drv.ms/u/s!Ag220j2nXkVswCXNjZcGk2mGtMnl?e=sArC1M" target="_blank">OneDrive</a><br/>
+                        <strong>Validation Set:</strong> <a href="https://1drv.ms/u/s!Ag220j2nXkVswDR5QNfMuk6EUDIg?e=sezaON" target="_blank">OneDrive</a><br/>
                         <strong>Test Set:</strong> Release in May 23, 2022<br/>
                         <em>Note: For Train Set, data in <code>listening_head.zip</code> contains the data in <code>talking_head.zip</code>.</em>
                     </p>
                     <h5>Guidelines</h5>
                     <p class="card-text">
-                        For each track, the data consists of three parts:
+                        <em>In Train Set</em>, for each track, the data consists of three parts:
                         <ul>
                             <li><code>videos/*.mp4</code>: all videos without audio track</li>
                             <li><code>audios/*.wav</code>: all audios</li>
@@ -194,11 +195,19 @@
                                     <tr><td>video_id</td><td>str</td><td>ID of video</td></tr>
                                     <tr><td>uuid</td><td>str</td><td>ID of video sub-clips</td></tr>
                                     <tr><td>speaker_id</td><td>int</td><td>ID of speaker</td></tr>
-                                    <tr><td>listener_id (optional)</td><td>int</td><td>ID of listener (only in listening_head)</td></tr>
+                                    <tr><td>listener_id</td><td>int</td><td>ID of listener, <em>only in listening_head</em></td></tr>
                                 </tbody>
                                 </table>
                                 Given the uuid, the only audio <code>audios/{uuid}.wav</code> can be identified, and the listener&#39;s video is <code>videos/{uuid}.listener.mp4</code>, the speaker&#39;s video is <code>videos/{uuid}.speaker.mp4</code>.
                             </li>
+                        </ul>
+                        <em>In Validation Set</em>, it organized as the final Test Set exclude the <code>output/</code> directory.<br/>The inputs consist of these parts:
+                        <ul>
+                            <li><code>videos/*.mp4</code>: speaker videos, <em>only in listening_head</em></li>
+                            <li><code>audios/*.wav</code>: all audios</li>
+                            <li><code>first_frames/*.jpg</code>: first frames of expected listener/speaker videos</li>
+                            <li><code>ref_images/(\d+).jpg</code>: reference images by person id</li>
+                            <li><code>*.csv</code>: return meta data about all videos/audios, same to CSVs in Train Set</li>
                         </ul>
                         Meanwhile, a baseline method and evaluation scripts is released in <a href="https://github.com/dc3ea9f/vico_challenge_baseline" target="_blank">github</a>.<br/>
                         Example generations on train set:
